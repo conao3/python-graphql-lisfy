@@ -3,11 +3,12 @@ from typing import Optional
 import more_itertools
 
 from . import types
+from . import reader
 
 
 def read(x: str) -> Optional[types.Value]:
     stream = more_itertools.peekable(x)
-    return types.Value()
+    return reader.read(stream)
 
 
 def eval(x: Optional[types.Value]) -> Optional[types.Value]:
