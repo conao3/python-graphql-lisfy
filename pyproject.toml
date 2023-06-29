@@ -8,6 +8,8 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+pydantic = "^1.10.9"
+more-itertools = "^9.1.0"
 
 [tool.poetry.scripts]
 graphql-lisfy = "graphql_lisfy.__main__:main"
