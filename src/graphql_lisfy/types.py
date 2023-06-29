@@ -18,4 +18,5 @@ class ReaderError(LisfyError):
 
 class Value(pydantic.BaseModel):
     def lisfy(self, minify: bool=False) -> str:
-        raise NotImplementedError
+        # raise NotImplementedError
+        return str(self)
